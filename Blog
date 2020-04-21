@@ -1,0 +1,229 @@
+Here is the HTML and CSS for my project so far: I'm not sure how to get them in separate tabs.
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lana's Green Kitchen</title>
+        <link rel="stylesheet" type="text/css" href="theme.css"/>
+    </head>
+   
+    <nav>
+            <ul class="container">
+                    <input type="text" class="search-input" placeholder="Search archives">
+                    <li><a href="default.asp">Home</a></li>
+                    <li><a href="news.asp">Recipes</a></li>
+                    <li><a href="contact.asp">Videos</a></li>
+                    <li><a href="about.asp">About</a></li>
+                  </ul>
+    </nav>
+
+    <header>
+            <div class="main-image"></div>
+            <img src="Images/backgroundcover.jpg">
+            <h5> PRIVATE CHEF & NUTRITIONIST </h5>
+            <h1>Lana's Green Kitchen</h1>
+        </header>
+        
+
+
+    <body>
+        <div class="Recipes">
+            <div class="card">
+                <p class="card_category">Green Lentil Soup</p>   
+                <img src="Images/photo4.png" alt="Green Lentil Soup">
+                    <p class="card_title">It just feels good to eat green things</p>
+            </div>
+            <div class="card">
+                <p class="card_category">Chocolate Covered Strawberries</p>   
+                <img src="Images/photo6.png" alt="Chocolate Covered Strawberries">  
+                    <p class="card_title">The easiest romantic recipe</p>
+            </div>  <div class="card">
+                <p class="card_category">Spinach and feta Turnovers</p>     
+                    <p class="card_title">Quick but impressive</p>
+            </div>  <div class="card">
+                <p class="card_category">Sweet Potatos with a Twist</p>     
+                    <p class="card_title">Sweet potato, Coconut and Ginger... Yes please. </p>
+            </div>  <div class="card">
+                <p class="card_category">Fresh Pasta</p>     
+                    <p class="card_title">The wonders of flour and water</p>
+            </div>  <div class="card">
+                <p class="card_category">How to make a jaw dropping Charcuterie</p>     
+                    <p class="card_title">Seriously. Your guests will drool</p>
+            </div>  <div class="card">
+                <p class="card_category">Pad Thai</p>     
+                    <p class="card_title">Happy Thai Teusday!</p>
+            </div>  <div class="card">
+                <p class="card_category">Indian and Southern Inspired Okra</p>     
+                    <p class="card_title">With a whole lot of spices...</p>
+            </div>  <div class="card">
+                <p class="card_category">Chai Quinoa Breakfast Bowl</p>     
+                    <p class="card_title">There's no better way to start the day</p>
+            </div>
+
+        </div>
+    </body>
+
+
+
+    
+</html>
+
+
+CSS: 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+
+}
+
+img{
+        max-width:100%;
+        height:auto;
+    }
+
+.main-image{
+    background-color: transparent;
+    max-width:100%;
+    align-items: flex-start;
+    transition: width 30s, height 60s;
+    background-size: 500px;
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    background-image: url('backgroundcover.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+nav {
+display: flex; 
+flex-direction: row; 
+justify-content: space-evenly;
+float: right; 
+}
+
+ul{
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+li{
+    margin: 0; 
+    padding-top: 15px; 
+    display: inline-block;
+    margin-left: 70px; 
+}
+
+nav a{
+padding-top: 10px;
+text-decoration: none; 
+text-decoration-color: olive;
+font-family: 'Open Sans';
+color:darkslategray;
+text-transform: uppercase;
+cursor: pointer; 
+transform: scale(1.04);
+
+}
+nav a:hover{
+color: olive;    
+
+}
+
+
+
+
+header{
+    font-family: 'Open Sans';
+    
+}
+
+h5{
+    font-family: 'Open Sans';
+    font-weight: 100;
+    padding: 0px; 
+    text-transform: uppercase;
+    justify-content: left;
+    
+}
+
+h1{
+    font-family: 'Playfair Display';
+    justify-content: left; 
+}
+
+header{
+    justify-content: left; 
+
+}
+
+body{
+    padding: 5% 10%;
+    background: #e9d4c0;
+    
+}
+
+.Recipes{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-gap: 16px; 
+    margin: 40px 0 40px 0;
+}
+#card-category{
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px; 
+    line-height: 18px;
+    font-weight: 300px; 
+    margin: 0; 
+
+
+}
+
+.card_title{
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px; 
+    line-height: 32px; 
+    margin: 10px 0 0 0;
+    background-image: 50px;
+ 
+
+}
+
+.card {
+    background-position: center; 
+    border-radius: 5px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    padding: 20px; 
+    transition: all .2s ease; 
+    width: 300px;
+     height: 300px;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+    
+}
+
+.card:hover {
+    cursor: pointer; 
+    box-shadow: 0px 30px 18px -8px rgba(0,0,0,0,1);
+    transform: scale(1.04);
+}
+
+
